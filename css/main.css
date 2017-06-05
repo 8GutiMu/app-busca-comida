@@ -1,0 +1,9 @@
+#map{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.input-field input[type=search]{
+    border-bottom: none
+}
