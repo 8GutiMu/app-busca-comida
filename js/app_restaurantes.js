@@ -50,9 +50,9 @@ var mostrarRestaurantes = function () {
         '</div>' +
         ' <div class="card-stacked">' +
         '<div class="card-content">' +
-        '<h6>__nombre__</h6>' +
+        '<h6><strong>__nombre__</strong></h6>' +
         '<p>__direccion__</p>' +
-        '<p>Tipo: __tipoDeComida__</p>' +
+        '<p class="tamanio-letra-chico">Tipo: __tipoDeComida__</p>' +
         ' </div>' +
         ' </div>' +
         ' </div>' +
@@ -67,6 +67,12 @@ var mostrarRestaurantes = function () {
             .replace("__tipoDeComida__", contacto.comida);
     });
     $("#sectionRes").html(plantillaFinal);
+
+    arregloRestaurantes.forEach(function(){
+        
+    })
 }
+
+
 
 $(document).ready(cargarPagina);

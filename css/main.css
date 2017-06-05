@@ -7,3 +7,7 @@
 .input-field input[type=search]{
     border-bottom: none
 }
+
+.tamanio-letra-chico{
+    font-size: 10px;
+}
