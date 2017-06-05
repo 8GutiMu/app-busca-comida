@@ -1,23 +1,11 @@
 var cargarPagina = function () {
-	obtenerUbicacion()
+	obtenerCoordendas();
 };
 
-var obtenerUbicacion = function (e) {
-	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(mostrarPosicion);
-	} else {
-		alert("Actualice su navegador");
-	}
-};
-
-var mostrarPosicion = function (posicion) {
-	console.log(posicion);
-	// alert("Latitud: " + posicion.coords.latitude);
-	// alert("Longitud: " + posicion.coords.longitude);
-
+var obtenerCoordendas = function () {
 	var coordenadas = {
-		lat: posicion.coords.latitude, 
-		lng: posicion.coords.longitude
+        lat:19.4177435,
+        lng:-99.16479129999999
 	};
 	mostrarMapa(coordenadas);
 };
@@ -33,4 +21,9 @@ var mostrarMapa = function (coordenadas) {
     });
 }
 
-$(document).ready(obtenerUbicacion);
+
+
+
+
+$(document).ready(cargarPagina);
+
