@@ -39,7 +39,7 @@
  var cargarPagina = function () {
      obtenerCoordendas();
      mostrarRestaurantes(arregloRestaurantes);
-     $("#buscador").submit(filtrarContactos);
+     $("#search").keyup(filtrarContactos);
      $(document).on("click",".restaurante00",cambiarUbicacion)
      
  };
